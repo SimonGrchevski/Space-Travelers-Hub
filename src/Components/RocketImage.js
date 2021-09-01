@@ -5,7 +5,7 @@ const RocketImage = (props) => {
   const { imageUrl } = props;
   return (
     <article className="rocket-img-wrapper">
-      <img alt="" src={imageUrl} />
+      <img alt="" src={imageUrl} className="rocket-image" />
     </article>
   );
 };

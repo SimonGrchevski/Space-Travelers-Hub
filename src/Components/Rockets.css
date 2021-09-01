@@ -1,9 +1,23 @@
 .rocket {
   display: flex;
   gap: 10px;
+  padding-bottom: 20px;
 }
 
 .rockets-wrapper {
   width: 95%;
   margin: 0 auto;
 }
+
+.rocket-details {
+  width: 70%;
+}
+
+.rocket-img-wrapper {
+  width: 30%;
+}
+
+.rocket-image {
+  width: 100%;
+}
+
