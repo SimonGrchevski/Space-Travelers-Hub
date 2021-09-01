@@ -13,6 +13,10 @@
   width: 70%;
 }
 
+.rocket-details h1 {
+  margin: 0;
+}
+
 .rocket-img-wrapper {
   width: 30%;
 }
