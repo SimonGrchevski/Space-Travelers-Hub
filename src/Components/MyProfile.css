@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  gap: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.my-profile-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.filter-names {
+  border: 1px solid grey;
+  padding: 1rem;
+}
