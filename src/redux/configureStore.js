@@ -7,5 +7,4 @@ const reducer = combineReducers({
 });
 
 const store = createStore(reducer, applyMiddleware(logger));
-console.log(store.getState());
 export default store;

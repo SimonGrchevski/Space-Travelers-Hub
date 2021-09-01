@@ -1,8 +1,8 @@
-/* eslint-disable quotes, max-len */
+/* eslint-disable max-len */
 
-const SET_MISSIONS = "missions/SET_MISSIONS";
-const STATUS_MEMBER = "missions/STATUS_MEMBER";
-const JOIN_MISSSION = "missions/JOIN_MISSSION";
+const SET_MISSIONS = 'missions/SET_MISSIONS';
+const STATUS_MEMBER = 'missions/STATUS_MEMBER';
+const JOIN_MISSSION = 'missions/JOIN_MISSSION';
 
 export const setMissions = (payload) => ({
   type: SET_MISSIONS,
@@ -22,7 +22,7 @@ export const joinMission = (id) => ({
 const reducer = (state = [], action) => {
   switch (action.type) {
     case SET_MISSIONS: {
-      return [...state, ...action.payload];
+      return [...action.payload];
     }
     case JOIN_MISSSION: {
       return state.map((mission) => (mission.id !== action.id ? mission : { ...mission, join: !mission.join }));
@@ -33,8 +33,3 @@ const reducer = (state = [], action) => {
 };
 
 export default reducer;
-
-// [
-//   ...state,
-//   { ...action.payload, join: true, status: "Leave Mission" },
-// ];

@@ -1,11 +1,11 @@
-/* eslint-disable jsx-a11y/control-has-associated-label, quotes, max-len,  no-unused-vars */
+/* eslint-disable jsx-a11y/control-has-associated-label */
 
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import axios from "axios";
-import Mission from "./Mission";
-import "./Missions.css";
-import { setMissions } from "../redux/reducers/MissionsReducer";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import axios from 'axios';
+import Mission from './Mission';
+import './Missions.css';
+import { setMissions } from '../redux/reducers/MissionsReducer';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
@@ -13,7 +13,7 @@ const Missions = () => {
 
   const loadMissions = async () => {
     const missions = await axios
-      .get("https://api.spacexdata.com/v3/missions?limit=3")
+      .get('https://api.spacexdata.com/v3/missions?limit=3')
       .then((res) => {
         const result = res.data.map((item) => ({
           name: item.mission_name,
@@ -30,7 +30,7 @@ const Missions = () => {
     loadMissions();
   }, []);
   return (
-    <div>
+    <div className="missions-table">
       <table>
         <tbody>
           <tr>
