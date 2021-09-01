@@ -6,11 +6,11 @@ import './Rockets.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rockets);
   useEffect(() => {
-    dispatch(loadRockets());
+    if (!rockets.length)dispatch(loadRockets());
   }, []);
 
-  const rockets = useSelector((state) => state.rockets);
   const rocket = rockets.map((e) => (
     <Rocket
       key={e.id}
