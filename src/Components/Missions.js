@@ -1,45 +1,48 @@
-/* eslint-disable jsx-a11y/control-has-associated-label, quotes */
+/* eslint-disable jsx-a11y/control-has-associated-label, quotes, max-len,  no-unused-vars */
 
-import React from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
 import Mission from "./Mission";
 import "./Missions.css";
+import { setMissions } from "../redux/reducers/MissionsReducer";
 
 const Missions = () => {
-  const missions = [
-    {
-      id: "5",
-      name: "Thaicom",
-      description:
-        "KAJNFKASDVNAKSfcakCHBASKDCGVSAYV  JHGHJGH CH BMb fdsfjsnd,mfnhaslifhawnfhjafhbaskjf,szmbfasjcbnamszc bbbnb snmz v sk idka addak j adkljdlasjdoi;fH jkiah SKJF hdzsf dsjkfh iulF sKJDFh jgASH DaLS dajS adS ",
-      status: {
-        member: false,
-        join: false,
-      },
-    },
-    {
-      id: "5",
-      name: "Thaicom",
-      description:
-        "KAJNFKASDVNAKSfcakCHBASKDCGVSAYV  JHGHJGH CH BMb fdsfjsnd,mfnhaslifhawnfhjafhbaskjf,szmbfasjcbnamszc bbbnb snmz v sk idka addak j adkljdlasjdoi;fH jkiah SKJF hdzsf dsjkfh iulF sKJDFh jgASH DaLS dajS adS ",
-      status: {
-        member: false,
-        join: false,
-      },
-    },
-  ];
+  const missions = useSelector((state) => state.missions);
+  const dispatch = useDispatch();
 
+  const loadMissions = async () => {
+    const missions = await axios
+      .get("https://api.spacexdata.com/v3/missions?limit=3")
+      .then((res) => {
+        const result = res.data.map((item) => ({
+          name: item.mission_name,
+          id: item.mission_id,
+          description: item.description,
+          join: false,
+        }));
+        return result;
+      });
+    dispatch(setMissions(missions));
+  };
+
+  useEffect(() => {
+    loadMissions();
+  }, []);
   return (
     <div>
       <table>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th />
-        </tr>
-        {missions.map((mission) => (
-          <Mission key={mission.id} mission={mission} />
-        ))}
+        <tbody>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th />
+          </tr>
+          {missions.map((mission) => (
+            <Mission key={mission.id} mission={mission} />
+          ))}
+        </tbody>
       </table>
     </div>
   );
