@@ -14,17 +14,9 @@ const Mission = ({ mission }) => {
   };
 
   const bgStyleMember = {
-    backgroundColor: 'rgba(137, 196, 244, 1)',
+    backgroundColor: '#000',
     fontSize: '16px',
-  };
-
-  const bgStyleJoin = {
-    border: '1px solid red',
     color: 'red',
-  };
-
-  const bgStyleJoinFalse = {
-    color: 'green',
   };
 
   return (
@@ -39,8 +31,7 @@ const Mission = ({ mission }) => {
       <td>
         <button
           type="button"
-          className="join-btn"
-          style={join ? bgStyleJoin : bgStyleJoinFalse}
+          className={join ? 'leave-btn' : 'join-btn'}
           onClick={handleClick}
         >
           {join ? 'Leave mission' : 'Join Mission'}
