@@ -2,41 +2,77 @@
   display: flex;
   gap: 10px;
   padding-bottom: 20px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rockets-wrapper {
   width: 95%;
   margin: 0 auto;
+  margin-top: 3rem;
+  max-height: 700px;
+  overflow-y:scroll;
+}
+
+.rockets-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.rockets-wrapper::-webkit-scrollbar-thumb {
+  background: rgb(84, 0, 0);
+  border-radius: 7px;
+}
+
+.rockets-wrapper::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.296);
+}
+
+.rockets-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgb(116, 1, 1);
 }
 
 .rocket-details {
   width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
 }
 
 .rocket-details h1 {
   margin: 0;
+  color: antiquewhite;
+  font-size: 22px;
+}
+
+.rocket-brief-info {
+  color: bisque;
+  opacity: 0.7;
+  font-size: 18px;
+  margin-top: 1rem;
 }
 
 .rocket-img-wrapper {
-  width: 30%;
+  width: 25%;
 }
 
 .rocket-image {
   width: 100%;
+  height: 100%;
 }
 
 .reservation-btn {
   outline: transparent;
   border: transparent;
-  background-color: #1f6feb;
-  color: #fff;
-
+  background: rgb(84, 0, 0);
+  color: #f9f9f9b8;
+  margin-top: 2rem;
 }
 
 .cancel-reservation-btn {
   border: 1px solid gray;
   color: gray;
   background-color: #fff;
+  margin-top: 2rem;
 }
 
 .reservation-btn,
@@ -47,7 +83,7 @@
 }
 
 .reserved-rocket {
-  background-color: rgb(15, 169, 153);
+  background-color: rgb(255, 1, 1);
   margin-right: 8px;
   font-size: 15px;
   border-radius: 5px;
