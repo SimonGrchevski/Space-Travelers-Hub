@@ -5,14 +5,14 @@ import RocketDetails from './RocketDetails';
 
 const Rocket = (props) => {
   const {
-    id, name, description, image,
+    id, name, description, image, reserved,
   } = props;
 
   return (
 
     <section className="rocket">
       <RocketImage imageUrl={image} />
-      <RocketDetails id={id} name={name} description={description} />
+      <RocketDetails id={id} name={name} description={description} reserved={reserved} />
     </section>
   );
 };
@@ -22,6 +22,7 @@ Rocket.propTypes = {
   name: PropType.string.isRequired,
   image: PropType.string.isRequired,
   description: PropType.string.isRequired,
+  reserved: PropType.bool.isRequired,
 };
 
 export default Rocket;

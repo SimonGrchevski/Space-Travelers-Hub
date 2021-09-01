@@ -18,6 +18,7 @@ const Rockets = () => {
       id={e.id}
       description={e.description}
       image={e.image}
+      reserved={e.reserved}
     />
   ));
   return (
