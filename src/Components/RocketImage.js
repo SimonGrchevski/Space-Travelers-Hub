@@ -1,8 +1,8 @@
 import React from 'react';
 
 const RocketImage = () => (
-  <article className="rocket-wrapper">
-    <image />
+  <article className="rocket-img-wrapper">
+    <img alt="" />
   </article>
 );
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import Rocket from './Rocket';
+import './Rockets.css';
 
 const Rockets = () => (
-  <div>
+  <section className="rockets-wrapper">
     <Rocket />
-  </div>
+  </section>
 );
 
 export default Rockets;
