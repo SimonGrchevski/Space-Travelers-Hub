@@ -1,17 +1,16 @@
 import axios from 'axios';
 
 const LOAD = 'rockets/LOAD';
-const RESERVE = 'rockets/RESERVE';
+const CHANGE_RESERVATION = 'rockets/CHANGE_RESERVATION';
 
 export const rocketsReducer = (state = [], action) => {
   switch (action.type) {
     case LOAD:
       return [...action.payload];
-    case RESERVE:
-      console.log(state);
+    case CHANGE_RESERVATION:
       return state.map((r) => {
         if (r.id !== action.payload.id) return r;
-        return { ...r, reserved: true };
+        return { ...r, reserved: !r.reserved };
       });
     default:
       return state;
@@ -25,9 +24,9 @@ export const loadRocketsAC = (payload) => (
   }
 );
 
-export const reserveRocketAC = (id) => (
+export const changeReservationAC = (id) => (
   {
-    type: RESERVE,
+    type: CHANGE_RESERVATION,
     payload: {
       id,
     },

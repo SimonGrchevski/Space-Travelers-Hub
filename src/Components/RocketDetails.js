@@ -2,19 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RocketButton from './RocketButton';
 
+const getSpanAttr = (reserved) => ({
+  class: reserved ? 'reserved-rocket' : 'not-reserved',
+  text: reserved ? 'Reserved' : '',
+});
+
 const RocketDetails = (props) => {
   const {
     id, name, description, reserved,
   } = props;
+  const s = getSpanAttr(reserved);
   return (
     <article className="rocket-details">
       <h1>{name}</h1>
 
       <p className="rocket-brief-info">
-        <span className="reserved">{reserved ? 'Reserved' : '' }</span>
+        <span className={s.class}>{s.text}</span>
         {description}
       </p>
-      <RocketButton id={id} />
+      <RocketButton id={id} reserved={reserved} />
     </article>
   );
 };
