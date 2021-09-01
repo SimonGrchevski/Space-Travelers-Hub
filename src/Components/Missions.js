@@ -13,7 +13,7 @@ const Missions = () => {
 
   const loadMissions = async () => {
     const missions = await axios
-      .get('https://api.spacexdata.com/v3/missions?limit=3')
+      .get('https://api.spacexdata.com/v3/missions?limit=4')
       .then((res) => {
         const result = res.data.map((item) => ({
           name: item.mission_name,
@@ -27,7 +27,9 @@ const Missions = () => {
   };
 
   useEffect(() => {
-    loadMissions();
+    if (missions.length === 0) {
+      loadMissions();
+    }
   }, []);
   return (
     <div className="missions-table">

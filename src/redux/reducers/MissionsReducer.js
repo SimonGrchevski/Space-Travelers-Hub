@@ -22,7 +22,7 @@ export const joinMission = (id) => ({
 const reducer = (state = [], action) => {
   switch (action.type) {
     case SET_MISSIONS: {
-      return [...action.payload];
+      return [...state, ...action.payload];
     }
     case JOIN_MISSSION: {
       return state.map((mission) => (mission.id !== action.id ? mission : { ...mission, join: !mission.join }));
