@@ -2,23 +2,39 @@
   display: flex;
   gap: 10px;
   padding-bottom: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rockets-wrapper {
   width: 95%;
   margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .rocket-details {
   width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
 }
 
 .rocket-details h1 {
   margin: 0;
+  color: antiquewhite;
+  font-size: 22px;
+}
+
+.rocket-brief-info {
+  color: bisque;
+  opacity: 0.7;
+  font-size: 18px;
+  margin-top: 1rem;
 }
 
 .rocket-img-wrapper {
-  width: 30%;
+  width: 15%;
+  border: 2px solid #000;
 }
 
 .rocket-image {
@@ -28,15 +44,16 @@
 .reservation-btn {
   outline: transparent;
   border: transparent;
-  background-color: #1f6feb;
-  color: #fff;
-
+  background-color: orange;
+  color: #000;
+  margin-top: 2rem;
 }
 
 .cancel-reservation-btn {
   border: 1px solid gray;
   color: gray;
   background-color: #fff;
+  margin-top: 2rem;
 }
 
 .reservation-btn,

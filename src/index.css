@@ -17,3 +17,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+body {
+  background-image: url(./Components/space.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

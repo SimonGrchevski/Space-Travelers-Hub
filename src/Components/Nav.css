@@ -16,6 +16,10 @@ header {
   align-items: center;
 }
 
+.nav-title{
+  color: orange;
+}
+
 .nav-list {
   display: flex;
   gap: 2rem;
@@ -32,7 +36,7 @@ header {
 }
 
 .link {
-  color: rgba(34, 167, 240, 1);
+  color: red;
 }
 
 .link:focus {
