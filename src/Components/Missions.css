@@ -81,6 +81,7 @@ tr {
   border-radius: 4px;
   outline: transparent;
   border: transparent;
+  cursor: pointer;
 }
 
 .join-btn {
