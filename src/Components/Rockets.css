@@ -1,0 +1,57 @@
+.rocket {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.rockets-wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.rocket-details {
+  width: 70%;
+}
+
+.rocket-details h1 {
+  margin: 0;
+}
+
+.rocket-img-wrapper {
+  width: 30%;
+}
+
+.rocket-image {
+  width: 100%;
+}
+
+.reservation-btn {
+  outline: transparent;
+  border: transparent;
+  background-color: #1f6feb;
+  color: #fff;
+
+}
+
+.cancel-reservation-btn {
+  border: 1px solid gray;
+  color: gray;
+  background-color: #fff;
+}
+
+.reservation-btn,
+.cancel-reservation-btn {
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.reserved-rocket {
+  background-color: rgb(15, 169, 153);
+  margin-right: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 10px;
+}
