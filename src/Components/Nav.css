@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #e8e8e8;
+  background-color: rgba(0, 0, 0, 0.535);
 }
 
 .logo-title-wrapper {
@@ -16,8 +16,9 @@ header {
   align-items: center;
 }
 
-.nav-title{
-  color: orange;
+.nav-title,
+.link {
+  color: rgb(133, 4, 4);
 }
 
 .nav-list {
@@ -33,10 +34,6 @@ header {
 .nav-my-profile {
   border-left: 1px solid #000;
   padding-left: 2rem;
-}
-
-.link {
-  color: red;
 }
 
 .link:focus {
