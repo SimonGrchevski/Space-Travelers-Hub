@@ -1,12 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import RocketButton from './RocketButton';
 
-const RocketDetails = () => (
-  <article className="rocket-details">
-    <h1>Falcon 1</h1>
-    <p className="rocket-brief-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <RocketButton />
-  </article>
-);
+const RocketDetails = (props) => {
+  const { id, name, description } = props;
+  return (
+    <article className="rocket-details">
+      <h1>{name}</h1>
+      <p className="rocket-brief-info">{description}</p>
+      <RocketButton id={id} />
+    </article>
+  );
+};
+
+RocketDetails.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default RocketDetails;
