@@ -6,7 +6,7 @@
 
 ![screenshot](./SC3.png)
 
-Space-Travelers-Hub is an webapp where you can reserve a rocket and join a mission in outerspace. Enjoy the interstellar voyage. Mars here we come!
+Space-Travelers-Hub is an webapp where you can reserve a rocket and join a mission in outer space. Enjoy the interstellar voyage. Mars here we come!
 
 
 ## Live demo
