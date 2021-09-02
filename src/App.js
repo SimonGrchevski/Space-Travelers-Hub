@@ -6,7 +6,7 @@ import MyProfile from './Components/MyProfile';
 
 const App = () => (
   <div>
-    <Router>
+    <Router basename="/Space-Travelers-Hub">
       <Nav />
       <Switch>
         <Route exact path="/" component={Rockets} />
