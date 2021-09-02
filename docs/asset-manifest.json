@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Space-Travelers-Hub/static/css/main.51084489.chunk.css",
-    "main.js": "/Space-Travelers-Hub/static/js/main.6ee04de4.chunk.js",
-    "main.js.map": "/Space-Travelers-Hub/static/js/main.6ee04de4.chunk.js.map",
-    "runtime-main.js": "/Space-Travelers-Hub/static/js/runtime-main.6a30e41e.js",
-    "runtime-main.js.map": "/Space-Travelers-Hub/static/js/runtime-main.6a30e41e.js.map",
-    "static/js/2.1da5cdc0.chunk.js": "/Space-Travelers-Hub/static/js/2.1da5cdc0.chunk.js",
-    "static/js/2.1da5cdc0.chunk.js.map": "/Space-Travelers-Hub/static/js/2.1da5cdc0.chunk.js.map",
-    "index.html": "/Space-Travelers-Hub/index.html",
-    "static/css/main.51084489.chunk.css.map": "/Space-Travelers-Hub/static/css/main.51084489.chunk.css.map",
-    "static/js/2.1da5cdc0.chunk.js.LICENSE.txt": "/Space-Travelers-Hub/static/js/2.1da5cdc0.chunk.js.LICENSE.txt",
-    "static/media/euclidean.9ed6f14b.png": "/Space-Travelers-Hub/static/media/euclidean.9ed6f14b.png",
-    "static/media/index.css": "/Space-Travelers-Hub/static/media/space.5a126d68.webp"
+    "main.css": "/static/css/main.40db01d3.chunk.css",
+    "main.js": "/static/js/main.6ee04de4.chunk.js",
+    "main.js.map": "/static/js/main.6ee04de4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9040f5fb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9040f5fb.js.map",
+    "static/js/2.1da5cdc0.chunk.js": "/static/js/2.1da5cdc0.chunk.js",
+    "static/js/2.1da5cdc0.chunk.js.map": "/static/js/2.1da5cdc0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.40db01d3.chunk.css.map": "/static/css/main.40db01d3.chunk.css.map",
+    "static/js/2.1da5cdc0.chunk.js.LICENSE.txt": "/static/js/2.1da5cdc0.chunk.js.LICENSE.txt",
+    "static/media/euclidean.9ed6f14b.png": "/static/media/euclidean.9ed6f14b.png",
+    "static/media/index.css": "/static/media/space.5a126d68.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a30e41e.js",
+    "static/js/runtime-main.9040f5fb.js",
     "static/js/2.1da5cdc0.chunk.js",
-    "static/css/main.51084489.chunk.css",
+    "static/css/main.40db01d3.chunk.css",
     "static/js/main.6ee04de4.chunk.js"
   ]
 }
