@@ -1,5 +1,5 @@
 # Space-Travelers-Hub
- 
+
 ![screenshot](./SC1.png)
 
 ![screenshot](./SC2.png)
@@ -8,13 +8,13 @@
 
 Space-Travelers-Hub is an webapp where you can reserve a rocket and join a mission in outer space. Enjoy the interstellar voyage. Mars here we come!
 
-
 ## Live demo
+
 [See Project](https://simongrchevski.github.io/Space-Travelers-Hub/)
 
-
 ## Presentational video
-[See Video](...)
+
+[See Video](https://drive.google.com/file/d/1b59zr0_rBmyHzOkaTB_2HLuZFkJGlp2t/view?usp=sharing)
 
 ## Built With
 
@@ -28,17 +28,17 @@ Space-Travelers-Hub is an webapp where you can reserve a rocket and join a missi
 
 - `git clone git@github.com:SimonGrchevski/Space-Travelers-Hub.git`
 
-And then In your terminal run : 
+And then In your terminal run :
 
 - `cd Space-Travelers-Hub`
 
 To install all the available dependecies run:
-- ``npm install``
+
+- `npm install`
 
 To run this application locally :
 
 - `npm start`
-
 
 ## Authors
 
