@@ -10,7 +10,7 @@ Space-Travelers-Hub is an webapp where you can reserve a rocket and join a missi
 
 
 ## Live demo
-[See Project](https://simongrchevski.github.io/)
+[See Project](https://simongrchevski.github.io/Space-Travelers-Hub/)
 
 
 ## Presentational video
