@@ -24,7 +24,6 @@
   background: rgb(116, 1, 1);
 }
 
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -43,16 +42,16 @@ th {
   font-size: 20px;
 }
 
+tr {
+  color: bisque;
+}
+
 tr:nth-child(even) {
   background-color: rgba(116, 1, 1, 0.59);
 }
 
 tr:first-child > th {
-  color: antiquewhite;  
-}
-
-tr {
-  color: bisque;
+  color: antiquewhite;
 }
 
 .status-placeholder {
@@ -87,6 +86,7 @@ tr {
   background: rgb(192, 1, 1);
   color: #fff;
 }
+
 .leave-btn {
   background: #fff;
   color: rgb(192, 1, 1);

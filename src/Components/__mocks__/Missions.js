@@ -1,10 +1,8 @@
 import React from 'react';
 import Mission from './Mission';
 
-const Missions = () => {
-  return (
-    <Mission />
-  )
-}
+const Missions = () => (
+  <Mission />
+);
 
 export default Missions;
