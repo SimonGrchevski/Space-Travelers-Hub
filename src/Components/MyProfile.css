@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  gap: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.my-profile-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.my-profile-wrapper h2 {
+  color: antiquewhite;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.467);
+  color: bisque;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.list > li:nth-child(even) {
+  background-color: rgba(116, 1, 1, 0.59);
+  font-weight: bold;
+}
+
+.filter-names {
+  border: 1px solid black;
+  padding: 1rem;
+}
